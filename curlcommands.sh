@@ -28,7 +28,7 @@ curl -X PUT \
 -H "Authorization: Bearer $token" \
 -H "Date: Sat, 11 Jan 2025 01:02:00 GMT" -H "x-ms-version: 2025-01-05" \
 -H "Content-Type: application/xml; charset=UTF-8" \
--d @tags.xml "https://aaaorgeastus2.blob.core.windows.net/sample/vectorindex.csv?comp=tags"
+-d @tags.xml "https://{Your Storage Account}.blob.core.windows.net/sample/vectorindex.csv?comp=tags"
 
 
 "Container level query with and on tags work"
@@ -36,14 +36,14 @@ curl -X PUT \
 curl -X GET \
 -H "Authorization: Bearer $token" \
 -H "Date: Sat, 11 Jan 2025 01:02:00 GMT" -H "x-ms-version: 2025-01-05" \
-"https://aaaorgeastus2.blob.core.windows.net?comp=blobs&where=%40container%3D%27sample%27%20AND%20test%3D%272024-01-05%27"
+"https://{Your Storage Account}.blob.core.windows.net?comp=blobs&where=%40container%3D%27sample%27%20AND%20test%3D%272024-01-05%27"
 
 "> works"
 "Note the URL needs to be encoded"
 curl -X GET \
 -H "Authorization: Bearer $token" \
 -H "Date: Sat, 11 Jan 2025 01:02:00 GMT" -H "x-ms-version: 2025-01-05" \
-"https://aaaorgeastus2.blob.core.windows.net?comp=blobs&where=test%3E%272024-01-04%27"
+"https://{Your Storage Account}.blob.core.windows.net?comp=blobs&where=test%3E%272024-01-04%27"
 
 "Another way to do the same"
 
@@ -51,7 +51,7 @@ curl -X GET \
 -H "Authorization: Bearer $token" \
 -H "Date: Sat, 11 Jan 2025 20:02:00 GMT" -H "x-ms-version: 2025-01-05" \
 -H "x-ms-if-tags: \"test\" >= '2024-01-05'" \
-"https://aaaorgeastus2.blob.core.windows.net/sample?restype=container&comp=list"
+"https://{Your Storage Account}.blob.core.windows.net/sample?restype=container&comp=list"
 
 
 "List the blobs that fit the criteria for pushing to cold tier"
@@ -63,9 +63,9 @@ curl -X PUT \
 -H "Date: Sat, 11 Jan 2025 20:02:00 GMT" \
 -H "x-ms-version: 2025-01-05" \
 -H "x-ms-access-tier: Cool" \
-"https://aaaorgeastus2.blob.core.windows.net/sample/vectorindex.csv?comp=tier"
+"https://{Your Storage Account}.blob.core.windows.net/sample/vectorindex.csv?comp=tier"
 
-https://github.com/Azure-Samples/AzureStorageSnippets/tree/master/blobs/howto/Java/blob-devguide/blob-devguide-blobs/src/main/java/com/blobs/devguide/blobs
+#https://github.com/Azure-Samples/AzureStorageSnippets/tree/master/blobs/howto/Java/blob-devguide/blob-devguide-blobs/src/main/java/com/blobs/devguide/blobs
 
 
 
