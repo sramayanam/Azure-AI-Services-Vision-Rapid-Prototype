@@ -57,7 +57,7 @@ public class AnalyzeLargeImageFile {
         // Uses Azure Entra for Authentication
         BlobServiceClient blobServiceClient = new BlobServiceClientBuilder()
                 .credential(new DefaultAzureCredentialBuilder().build())
-                .endpoint("https://aaaorgaistoragen4b28.blob.core.windows.net")
+                .endpoint("https://{Your Azure Storage Account}.blob.core.windows.net")
                 .addPolicy(new RetryPolicy(retryOptions))
                 .buildClient();
 
@@ -69,7 +69,7 @@ public class AnalyzeLargeImageFile {
         // Image analysis client setup
         String endpoint = System.getenv("VISION_ENDPOINT");
         if (endpoint == null || endpoint.isBlank()) {
-            endpoint = "https://aaaorgaiserviceseast1.cognitiveservices.azure.com/";
+            endpoint = "https://{Your AI Services Account}.cognitiveservices.azure.com/";
         }
 
         ImageAnalysisAsyncClient client = new ImageAnalysisClientBuilder()
