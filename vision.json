@@ -1,0 +1,174 @@
+{
+  "caption" : {
+    "confidence" : 0.8394503593444824,
+    "text" : "a person holding a golf club"
+  },
+  "denseCaptions" : {
+    "values" : [ {
+      "confidence" : 0.8394503593444824,
+      "text" : "a person holding a golf club",
+      "boundingBox" : {
+        "x" : 0,
+        "y" : 0,
+        "width" : 7490,
+        "height" : 4513
+      }
+    }, {
+      "confidence" : 0.8764962553977966,
+      "text" : "a person holding a golf club",
+      "boundingBox" : {
+        "x" : 2618,
+        "y" : 826,
+        "width" : 2007,
+        "height" : 3633
+      }
+    }, {
+      "confidence" : 0.8234888315200806,
+      "text" : "a person swinging a golf club",
+      "boundingBox" : {
+        "x" : 0,
+        "y" : 0,
+        "width" : 7453,
+        "height" : 4401
+      }
+    }, {
+      "confidence" : 0.732576310634613,
+      "text" : "a person wearing a white hat",
+      "boundingBox" : {
+        "x" : 3681,
+        "y" : 844,
+        "width" : 649,
+        "height" : 646
+      }
+    }, {
+      "confidence" : 0.7491781115531921,
+      "text" : "a person wearing plaid pants",
+      "boundingBox" : {
+        "x" : 3089,
+        "y" : 2984,
+        "width" : 1426,
+        "height" : 1488
+      }
+    }, {
+      "confidence" : 0.7557935118675232,
+      "text" : "a person wearing black gloves",
+      "boundingBox" : {
+        "x" : 2731,
+        "y" : 1057,
+        "width" : 383,
+        "height" : 367
+      }
+    }, {
+      "confidence" : 0.8442628383636475,
+      "text" : "a person holding a golf club",
+      "boundingBox" : {
+        "x" : 2731,
+        "y" : 1334,
+        "width" : 1497,
+        "height" : 1722
+      }
+    }, {
+      "confidence" : 0.690581738948822,
+      "text" : "a person holding a stick",
+      "boundingBox" : {
+        "x" : 3323,
+        "y" : 1057,
+        "width" : 1888,
+        "height" : 2037
+      }
+    }, {
+      "confidence" : 0.6862261295318604,
+      "text" : "a person's fist bumping",
+      "boundingBox" : {
+        "x" : 2714,
+        "y" : 1041,
+        "width" : 624,
+        "height" : 525
+      }
+    }, {
+      "confidence" : 0.5506646037101746,
+      "text" : "a blue smoke and light",
+      "boundingBox" : {
+        "x" : 71,
+        "y" : 162,
+        "width" : 2396,
+        "height" : 4083
+      }
+    } ]
+  },
+  "metadata" : {
+    "height" : 4513,
+    "width" : 7490
+  },
+  "modelVersion" : "2023-10-01",
+  "objects" : {
+    "values" : [ {
+      "boundingBox" : {
+        "x" : 2670,
+        "y" : 918,
+        "width" : 1940,
+        "height" : 3487
+      },
+      "tags" : [ {
+        "confidence" : 0.934,
+        "name" : "person"
+      } ]
+    } ]
+  },
+  "people" : {
+    "values" : [ {
+      "boundingBox" : {
+        "x" : 2633,
+        "y" : 871,
+        "width" : 1926,
+        "height" : 3611
+      },
+      "confidence" : 0.9433670043945312
+    }, {
+      "boundingBox" : {
+        "x" : 71,
+        "y" : 0,
+        "width" : 773,
+        "height" : 246
+      },
+      "confidence" : 0.0015703474637120962
+    } ]
+  },
+  "read" : {
+    "blocks" : [ ]
+  },
+  "smartCrops" : {
+    "values" : [ {
+      "aspectRatio" : 0.9,
+      "boundingBox" : {
+        "x" : 1188,
+        "y" : 0,
+        "width" : 4044,
+        "height" : 4495
+      }
+    }, {
+      "aspectRatio" : 1.33,
+      "boundingBox" : {
+        "x" : 0,
+        "y" : 0,
+        "width" : 5984,
+        "height" : 4495
+      }
+    } ]
+  },
+  "tags" : {
+    "values" : [ {
+      "confidence" : 0.9396378993988037,
+      "name" : "fireworks"
+    }, {
+      "confidence" : 0.9243506193161011,
+      "name" : "clothing"
+    }, {
+      "confidence" : 0.8900222778320312,
+      "name" : "person"
+    }, {
+      "confidence" : 0.6895596981048584,
+      "name" : "outdoor"
+    } ]
+  }
+}
