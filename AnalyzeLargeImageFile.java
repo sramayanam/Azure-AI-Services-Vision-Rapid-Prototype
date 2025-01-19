@@ -1,3 +1,5 @@
+// Copyright (c) Sree Ram for Private use of his customers. All rights reserved.
+// Licensed under the MIT License.
 package org.example;
 
 import java.io.*;
